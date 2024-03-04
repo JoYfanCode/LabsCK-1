@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="table.css">
+    <title>Лабораторная работа</title>
+</head>
+
+<body>
+    <div class="header">
+        <a href="./website.html">Основная cтраница</a>
+        <a href="./website_page2.html">Позиционирование элементов</a>
+        <a href="./table.html">Таблица</a>
+    </div>
+
+    <table>
+        <caption>Результаты</caption>
+        <thead>
+            <tr>
+                <th>#</th>
+                <th colspan="2">ФИО</th>
+                <th>Русский</th>
+                <th>Математика</th>
+                <th>Информатика</th>
+                <th>Баллы</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Семён</td>
+                <td>Мельников</td>
+                <td>100</td>
+                <td>100</td>
+                <td>100</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Марк</td>
+                <td>Канипов</td>
+                <td>100</td>
+                <td>98</td>
+                <td>99</td>
+                <td>297</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Денис</td>
+                <td>Сабуров</td>
+                <td>96</td>
+                <td>92</td>
+                <td>100</td>
+                <td>288</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Евгений</td>
+                <td>Ерохин</td>
+                <td>91</td>
+                <td>86</td>
+                <td>84</td>
+                <td>261</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Матвей</td>
+                <td>Лебедев</td>
+                <td>75</td>
+                <td>91</td>
+                <td>89</td>
+                <td>255</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br/><br/>
+
+    <form>
+        <hr color="black" />
+        <label for="first-name" class="form-text">Имя:</label>
+        <br/>
+        <input id="first-name" type="text" />
+        <br/><br/>
+        <label for="second-name" class="form-text">Фамилия:</label>
+        <br/>
+        <input id="second-name" type="text" />
+        <br/><br/>
+        <label for="rus-subject" class="form-text">Русский:</label>
+        <br/>
+        <input id="=rus-subject" type="number" />
+        <br/><br/>
+        <label for="math-subject" class="form-text">Математика:</label>
+        <br/>
+        <input id="math-subject" type="number" />
+        <br/><br/>
+        <label for="inf-subject" class="form-text">Информатика:</label>
+        <br/>
+        <input id="inf-subject" type="number" />
+        <br/><br/>
+        <input type="button" value="Отправить" />
+        <hr color="black" />
+    </form>
+    
+</body>
+
+</html>

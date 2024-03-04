@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" type="text/css" href="info.css">
+    <title>Лабораторная работа</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" 
+    rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-xxl">
+              <a class="navbar-brand" href="#">Laba</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="./info.html">Актёр</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./films.html">Фильмы</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Поиск фильма" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Поиск</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+    </header>
+
+    <br/>
+
+      <div class="row">
+        <div class="col-4">
+          <div id="list-example" class="list-group">
+            <a class="list-group-item list-group-item-action" href="#list-item-1">Карусель</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-2">Карточки с фильмами</a>
+            <a class="list-group-item list-group-item-action" href="#list-item-3">Краткая информация об актёре</a>
+          </div>
+        </div>
+        <div class="col-8">
+          <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0">
+            <h4 id="list-item-1"></h4>
+            <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./Images/Jim Kerry/5a8b4751-596c-418b-9550-7f8c11f51643.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Images/Jim Kerry/i.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./Images/Jim Kerry/image-2-2-680x407.webp" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            <h4 id="list-item-2"></h4>
+            <br/>
+            <div class="card" style="width: 18rem;">
+                <img src="./Images/Posters/600x900.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Шоу Трумана</h5>
+                  <p class="card-text">Представьте себе, что вы вдруг начинаете понимать, что вся ваша жизнь — результат работы автора телешоу, которое вот уже тридцать лет смотрит вся планета, начиная с момента вашего рождения.</p>
+                  <a href="https://www.kinopoisk.ru/film/4541/?utm_referrer=www.kinopoisk.ru&sso_failed=blocked&uuid=27d2f4cf-54e5-469a-89c6-460b5539a161" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+            <br/>
+            <div class="card" style="width: 18rem;">
+                <img src="./Images/Posters/sonic_poster.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Соник в кино</h5>
+                  <p class="card-text">Отвязный ярко-синий ёжик Соник из параллельного мира вместе с новообретённым лучшим другом-человеком по имени Том знакомится со сложностями жизни на Земле и противостоит злодейскому доктору Роботнику.</p>
+                  <a href="https://www.kinopoisk.ru/film/1016160/" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+            <br/>
+            <div class="card" style="width: 18rem;">
+                <img src="./Images/Posters/tupoi_i_eshe_typee.webp" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">Тупой и ещё тупее</h5>
+                  <p class="card-text">Два полных придурка Ллойд Крисмас и Харри Данн пытаются нагнать красивую девушку Мэри Суонсон, чтобы вручить ей оставленный ею в аэропорту чемоданчик.</p>
+                  <a href="https://www.kinopoisk.ru/film/5185/" class="btn btn-primary">Подробнее</a>
+                </div>
+            </div>
+            <h4 id="list-item-3"></h4>
+            <br/>
+            <p class="d-inline-flex gap-1">
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Краткая информация об актёре
+                </button>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <p>Карьера: Актер, Сценарист, Продюсер, Композитор</p>
+                    <p>Рост: 1.88 м</p>
+                    <p>Дата рождения: 17 января, 1962 • Козерог • 61 год</p>
+                    <p>Место рождения: Ньюмаркет, Онтарио, Канада</p>
+                    <p>Жанры: Комедия, драма, короткометражка</p>
+                    <p>Супруга: Мелисса Керри (развод)один ребенок, Лорен Холли (развод)</p>
+                    <p>Всего фильмов: 243, 1975 — 2022</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+
+</html>
